@@ -14,9 +14,9 @@ after_success:
   - docker build -t ella-harris/multi-server ./server
   - docker build -t ella-harris/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login docker.io -u "$DOCKER_ID" --password-stdin
-  - docker push ella-harris/multi-client
-  - docker push ella-harris/multi-nginx
-  - docker push ella-harris/multi-server
-  - docker push ella-harris/multi-worker
+  - docker push ellah/multi-client
+  - docker push ellah/multi-nginx
+  - docker push ellah/multi-server
+  - docker push ellah/multi-worker
 
 
